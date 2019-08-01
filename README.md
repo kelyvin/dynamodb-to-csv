@@ -10,37 +10,68 @@ This software is governed by the Apache 2.0 license.
 
 ## Usage
 
-typically, to use you'd run:
+### CLI tool
+You can export a CSV by running the CLI via `npx` if you install this module as a dependency:
 
-    node dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP > output.csv
+```bash
+$ npm install dynamoDBtoCSV --save
+$ npx dynamoDBtoCSV -t Hourly_ZEDO_Impressions_by_IP > output.csv
+```
+
+Or you can run the CLI after cloning the repo like so:
+
+```bash
+$ git clone https://github.com/chriskinsman/DynamoDbExportCsv.git
+$ cd DynamoDbExportCsv
+$ node bin/dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP > output.csv
+```
 
 or even:
 
-    node dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP -f output.csv
+```bash
+$ node bin/dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP -f output.csv
+```
 
-to export to CSV
+Use _-d_ to describe the table prior so you can have an idea of the number of rows you are going to export to get some information about the table.
 
-Use _-d_ to describe the table prior so you can have an idea of the number of rows you are going to export
-
-    node dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP -d
-
-to get some information about the table.
+```bash
+$ node bin/dynamoDBtoCSV.js -t Hourly_ZEDO_Impressions_by_IP -d
+```
 
 Full syntax is:
 
-    node dynamoDBtoCSV.js --help
-    	Usage: dynamoDBtoCSV.js [options]
+```
+node dynamoDBtoCSV.js --help
+  Usage: dynamoDBtoCSV.js [options]
 
-    Options:
+Options:
 
-    	-h, --help               output usage information
-    	-V, --version            output the version number
-    	-t, --table [tablename]  Add the table you want to output to csv
-    	-e, --endpoint [url]     Endpoint URL, can be used to dump from local DynamoDB
-    	-f, --file [file]        Name of the file to be created
-    	-d, --describe
-    	-p, --profile [profile]  Use profile from your credentials file
-    	-ec --envcreds           Load AWS Credentials using AWS Credential Provider Chain
+  -h, --help               output usage information
+  -V, --version            output the version number
+  -t, --table [tablename]  Add the table you want to output to csv
+  -e, --endpoint [url]     Endpoint URL, can be used to dump from local DynamoDB
+  -f, --file [file]        Name of the file to be created
+  -d, --describe
+  -p, --profile [profile]  Use profile from your credentials file
+  -ec --envcreds           Load AWS Credentials using AWS Credential Provider Chain
+```
+
+### Library
+You can also reference it as a library
+
+```bash
+$ npm install dynamoDBtoCSV --save
+```
+
+```javascript
+var csvExport = require('dynamoDBtoCSV');
+
+// The config options are the same as your CLI options
+csvExport({
+  table: "Hourly_ZEDO_Impressions_by_IP",
+  file: "output.csv"
+})
+```
 
 ## Pre-requisites
 
