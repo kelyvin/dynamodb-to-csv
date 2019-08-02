@@ -1,0 +1,6 @@
+.backups/**
+blueprints/**/files/**
+build/**
+node_modules/**
+dist/**
+public/**

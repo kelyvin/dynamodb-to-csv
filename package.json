@@ -1,21 +1,34 @@
 {
-  "name": "DynamoDBtoCSV",
-  "description": "Dump Dynamo into CSV format",
+  "name": "dynamodb-to-csv",
+  "description": "Export DynamoDB table data into a CSV format",
   "bin": {
-    "dynamoDBtoCSV": "./bin/dynamoDBtoCSV.js"
+    "dynamoDBtoCSV": "./bin/dynamodbToCsv.js"
   },
-  "main": "dynamoDBtoCSV.js",
+  "main": "dynamodbToCsv.js",
   "version": "0.0.1",
-  "private": true,
-  "homepage": "https://github.com/edasque/DynamoDBtoCSV",
-  "repository": "git://github.com/edasque/DynamoDBtoCSV",
+  "private": false,
+  "homepage": "https://github.com/kelyvin/dynamodbToCsv.git",
+  "repository": "https://github.com/kelyvin/dynamodbToCsv.git",
+  "scripts": {
+    "lint": "npx eslint --ext .js ."
+  },
   "engines": {
-    "node": ">=0.8.x"
+    "node": "^8.11.4 || ^10.16.0"
   },
   "dependencies": {
     "aws-sdk": "^2.503.0",
-    "commander": ">=2.2.0",
+    "commander": "^2.20.0",
     "dynamodb-marshaler": "^2.0.0",
     "papaparse": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.2",
+    "np": "^5.0.3"
   }
 }

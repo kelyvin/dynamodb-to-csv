@@ -1,0 +1,20 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  },
+  "extends": [
+    "standard"
+  ],
+  "env": {
+    "node" : true
+  },
+  "rules": {
+    "handle-callback-err"  : 0,
+    "key-spacing"          : 0,
+    "object-curly-spacing" : [2, "always"],
+    "no-throw-literal"     : "off"
+  }
+}
