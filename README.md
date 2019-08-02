@@ -17,7 +17,7 @@ You can export a CSV by running the CLI via `npx` if you install this module as 
 
 ```bash
 $ npm install dynamodbToCsv --save
-$ npx dynamodbToCsv -t Users > users.csv -i "<accesskeyid>" -s "<secretaccesskey>" -r "<region>"
+$ npx dynamodb-to-csv -t Users > users.csv -i "<accesskeyid>" -s "<secretaccesskey>" -r "<region>"
 ```
 
 Use `-d` to describe the table prior so you can have an idea of the number of rows you are going to export to get some information about the table.
@@ -29,18 +29,18 @@ $ npx -t Users -d --envcreds
 To see the available options, run the help command:
 
 ```
-npx dynamodbToCsv --help
+npx dynamodb-to-csv --help
 ```
 
 ### Library
 You can also reference it as a library
 
 ```bash
-$ npm install dynamodbToCsv --save
+$ npm install dynamodb-to-csv --save
 ```
 
 ```javascript
-const csvExport = require('dynamodbToCsv');
+const csvExport = require('dynamodb-to-csv');
 
 // The config options are the same as your CLI options
 csvExport({

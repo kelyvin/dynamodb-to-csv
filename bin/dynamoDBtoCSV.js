@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const dynamoDBtoCSV = require('../dynamoDBtoCSV')
+const dynamoDBtoCSV = require('../dynamodbToCsv')
 const program = require('commander')
 
 program
