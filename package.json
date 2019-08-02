@@ -1,15 +1,15 @@
 {
-  "name": "dynamodbToCsv",
+  "name": "dynamodb-to-csv",
   "description": "Export DynamoDB table data into a CSV format",
   "bin": {
-    "dynamodbToCsv": "./bin/dynamodbToCsv.js"
+    "dynamodb-to-csv": "./bin/dynamodbToCsv.js"
   },
   "main": "lib/dynamodbToCsv.js",
   "license": "MIT",
   "version": "0.0.1",
   "private": false,
-  "homepage": "https://github.com/kelyvin/dynamodbToCsv.git",
-  "repository": "https://github.com/kelyvin/dynamodbToCsv.git",
+  "homepage": "https://github.com/kelyvin/dynamodb-to-csv.git",
+  "repository": "https://github.com/kelyvin/dynamodb-to-csv.git",
   "scripts": {
     "lint": "npx eslint --ext .js ."
   },
