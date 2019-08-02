@@ -5,6 +5,7 @@
     "dynamoDBtoCSV": "./bin/dynamodbToCsv.js"
   },
   "main": "dynamodbToCsv.js",
+  "license": "MIT",
   "version": "0.0.1",
   "private": false,
   "homepage": "https://github.com/kelyvin/dynamodbToCsv.git",
