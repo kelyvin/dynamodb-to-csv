@@ -1,8 +1,8 @@
 {
-  "name": "dynamodb-to-csv",
+  "name": "dynamodbToCsv",
   "description": "Export DynamoDB table data into a CSV format",
   "bin": {
-    "dynamoDBtoCSV": "./bin/dynamodbToCsv.js"
+    "dynamodbToCsv": "./bin/dynamodbToCsv.js"
   },
   "main": "dynamodbToCsv.js",
   "license": "MIT",
