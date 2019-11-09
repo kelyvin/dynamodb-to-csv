@@ -11,6 +11,7 @@
   "homepage": "https://github.com/kelyvin/dynamodb-to-csv.git",
   "repository": "https://github.com/kelyvin/dynamodb-to-csv.git",
   "scripts": {
+    "test": "npx eslint --ext .js .",
     "lint": "npx eslint --ext .js ."
   },
   "engines": {
