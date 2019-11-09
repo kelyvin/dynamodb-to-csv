@@ -6,7 +6,7 @@
   },
   "main": "lib/dynamodbToCsv.js",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "homepage": "https://github.com/kelyvin/dynamodb-to-csv.git",
   "repository": "https://github.com/kelyvin/dynamodb-to-csv.git",
