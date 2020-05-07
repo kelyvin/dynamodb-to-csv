@@ -28,7 +28,7 @@ AWS_REGION
 You can export a CSV by running the CLI via `npx` if you install this module as a dependency:
 
 ```bash
-$ npx dynamodb-to-csv -t Users > users.csv -i "<accesskeyid>" -s "<secretaccesskey>" -r "<region>"
+$ npx dynamodb-to-csv -t Users -f users.csv -i "<accesskeyid>" -s "<secretaccesskey>" -r "<region>"
 ```
 
 Use `-d` to describe the table prior so you can have an idea of the number of rows you are going to export to get some information about the table.
