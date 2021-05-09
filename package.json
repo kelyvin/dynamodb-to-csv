@@ -21,7 +21,7 @@
     "aws-sdk": "^2.503.0",
     "commander": "^2.20.0",
     "dynamodb-marshaler": "^2.0.0",
-    "papaparse": "^4.1.4"
+    "papaparse": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
