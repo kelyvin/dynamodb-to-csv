@@ -15,7 +15,7 @@
     "lint": "npx eslint --ext .js ."
   },
   "engines": {
-    "node": "^8.11.4 || ^10.16.0 || ^12.13.0"
+    "node": ">=14.15.0"
   },
   "dependencies": {
     "aws-sdk": "^2.503.0",
