@@ -14,6 +14,7 @@ program
   .option('-f, --file [file]', 'Name of the file to be created')
   .option('-fs, --size [size]', 'Number of lines to read before writing.', 5000)
   .option('-ec, --envcreds', 'Will use environment variables instead for the AWS config')
+  .option('-c, --columns [columns]', 'What columns should be exported to the csv')
   .parse(process.argv)
 
 if (!program.table) {
